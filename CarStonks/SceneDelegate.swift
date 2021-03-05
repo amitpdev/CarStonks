@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import CarPlay
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
+    var interfaceController: CPInterfaceController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -50,3 +52,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+
+extension SceneDelegate: CPTemplateApplicationSceneDelegate {
+    
+    func templateApplicationScene(_ templateApplicationScene: CPTemplateApplicationScene,
+        didConnect interfaceController: CPInterfaceController) {
+        
+        // Store a reference to the interface controller so
+        // you can add and remove templates as the user
+        // interacts with your app.
+        self.interfaceController = interfaceController
+        
+        let stonksList = StonksList(symbols: Config.StonkSymbols,
+                                    tabTitle: "Stonks",
+                                    tabImage: "stonksBarIcon")
+        
+        let cryptoList = StonksList(symbols: Config.CryptoSymbols,
+                                    tabTitle: "Crypto",
+                                    tabImage: "cryptoBarIcon")
+
+        let rootTemplate = CPTabBarTemplate(templates: [stonksList.listTemplate, cryptoList.listTemplate])
+        interfaceController.setRootTemplate(rootTemplate, animated: true,
+            completion: nil)
+    }
+}

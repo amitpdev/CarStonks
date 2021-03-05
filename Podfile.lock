@@ -1,0 +1,18 @@
+PODS:
+  - Forest (1.27.0):
+    - Forest/Core (= 1.27.0)
+  - Forest/Core (1.27.0)
+
+DEPENDENCIES:
+  - Forest
+
+SPEC REPOS:
+  trunk:
+    - Forest
+
+SPEC CHECKSUMS:
+  Forest: d42fef9bbe971b330229ea341771f4cf0ce7e3f1
+
+PODFILE CHECKSUM: 7c8e8e5737070ac5e77da09e1177f14c063420f5
+
+COCOAPODS: 1.10.0

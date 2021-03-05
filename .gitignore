@@ -1,0 +1,9 @@
+Classes/Facebook_old
+.DS_Store
+xcuserdata
+xcuserstate
+.idea
+Pods
+Nester.app.dSYM.zip
+Nester.ipa
+fastlane/report.xml
