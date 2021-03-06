@@ -20,6 +20,7 @@
 		288A035425F275650021D8EC /* StonkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035325F275650021D8EC /* StonkData.swift */; };
 		288A036025F27B100021D8EC /* Stonk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035F25F27B100021D8EC /* Stonk.swift */; };
 		288A03A225F2A84D0021D8EC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A03A125F2A84D0021D8EC /* Config.swift */; };
+		288A03A725F2AEF40021D8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288A03A625F2AEF40021D8EC /* Assets.xcassets */; };
 		61067D2488EF3FB2836BDF5A /* Pods_CarStonks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BE204784EB7D4CD7FF1AA /* Pods_CarStonks.framework */; };
 		6F90D3844CB49B90F5F65D9D /* Pods_CarStonks_CarStonksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB67D64C51A2E73C4F69A79D /* Pods_CarStonks_CarStonksUITests.framework */; };
 		CB8FCFBD938634AD245C95A4 /* Pods_CarStonksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66426B296907A9A38086D5D /* Pods_CarStonksTests.framework */; };
@@ -64,6 +65,7 @@
 		288A035325F275650021D8EC /* StonkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonkData.swift; sourceTree = "<group>"; };
 		288A035F25F27B100021D8EC /* Stonk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stonk.swift; sourceTree = "<group>"; };
 		288A03A125F2A84D0021D8EC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		288A03A625F2AEF40021D8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		6BA7478197B1EE389DAF3A14 /* Pods-CarStonksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonksTests.debug.xcconfig"; path = "Target Support Files/Pods-CarStonksTests/Pods-CarStonksTests.debug.xcconfig"; sourceTree = "<group>"; };
 		909CDCA20718281D1F37235E /* Pods-CarStonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonks.debug.xcconfig"; path = "Target Support Files/Pods-CarStonks/Pods-CarStonks.debug.xcconfig"; sourceTree = "<group>"; };
 		CF2CB64F172E7E53185BC0E7 /* Pods-CarStonksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonksTests.release.xcconfig"; path = "Target Support Files/Pods-CarStonksTests/Pods-CarStonksTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				288A03A125F2A84D0021D8EC /* Config.swift */,
 				2836F42725F130D600D9E705 /* Main.storyboard */,
 				2836F42A25F130D800D9E705 /* Assets.xcassets */,
+				288A03A625F2AEF40021D8EC /* Assets.xcassets */,
 				2836F42C25F130D800D9E705 /* LaunchScreen.storyboard */,
 				2836F42F25F130D800D9E705 /* Info.plist */,
 				2836F48025F134A700D9E705 /* Entitlements.plist */,
@@ -295,6 +298,7 @@
 				2836F42E25F130D800D9E705 /* LaunchScreen.storyboard in Resources */,
 				2836F42B25F130D800D9E705 /* Assets.xcassets in Resources */,
 				2836F42925F130D600D9E705 /* Main.storyboard in Resources */,
+				288A03A725F2AEF40021D8EC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

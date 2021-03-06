@@ -7,21 +7,19 @@
 
 import Foundation
 
-
 struct Config {
     
     static let refreshInterval = 20.0
     
     static let StonkSymbols = [
-        "NDX",
+        "FVRR",
+        "UPWK",
+        "LMND",
         "GOOG",
         "AAPL",
         "MSFT",
         "FB",
         "TSLA",
-        "FVRR",
-        "UPWK",
-        "LMND",
         "ZM",
         "GME",
         "AMC"
@@ -34,7 +32,6 @@ struct Config {
         "DOGE-USD",
         "LINK-USD",
         "AVAX-USD",
-        "MATIC-USD",
         "BNB-USD",
         "DOT1-USD",
         "XMR-USD",
