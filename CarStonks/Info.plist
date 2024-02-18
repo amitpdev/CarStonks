@@ -37,19 +37,18 @@
 					<string>Main</string>
 				</dict>
 			</array>
-            <key>CPTemplateApplicationSceneSessionRoleApplication</key>
-            <array>
-                <dict>
-                    <key>UISceneClassName</key>
-                    <string>CPTemplateApplicationScene</string>
-                    <key>UISceneConfigurationName</key>
-                    <string>CarStonks CP SceneConfiguration</string>
-                    <key>UISceneDelegateClassName</key>
-                    <string>CarStonks.SceneDelegate</string>
-                </dict>
-            </array>
+			<key>CPTemplateApplicationSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>CarPlay Configuration</string>
+					<key>UISceneClassName</key>
+					<string>CPTemplateApplicationScene</string>
+					<key>UISceneDelegateClassName</key>
+					<string>CarStonks.SceneDelegate</string>
+				</dict>
+			</array>
 		</dict>
-        
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,14 +16,12 @@
 		2836F43925F130D800D9E705 /* CarStonksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836F43825F130D800D9E705 /* CarStonksTests.swift */; };
 		2836F44425F130D800D9E705 /* CarStonksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2836F44325F130D800D9E705 /* CarStonksUITests.swift */; };
 		2836F48125F134A700D9E705 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2836F48025F134A700D9E705 /* Entitlements.plist */; };
-		288A034C25F1B9CD0021D8EC /* StonksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A034B25F1B9CD0021D8EC /* StonksList.swift */; };
-		288A035425F275650021D8EC /* StonkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035325F275650021D8EC /* StonkData.swift */; };
-		288A036025F27B100021D8EC /* Stonk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035F25F27B100021D8EC /* Stonk.swift */; };
+		288A034C25F1B9CD0021D8EC /* StockListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A034B25F1B9CD0021D8EC /* StockListTab.swift */; };
+		288A035425F275650021D8EC /* StockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035325F275650021D8EC /* StockDataManager.swift */; };
+		288A036025F27B100021D8EC /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A035F25F27B100021D8EC /* Stock.swift */; };
 		288A03A225F2A84D0021D8EC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A03A125F2A84D0021D8EC /* Config.swift */; };
 		288A03A725F2AEF40021D8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288A03A625F2AEF40021D8EC /* Assets.xcassets */; };
-		61067D2488EF3FB2836BDF5A /* Pods_CarStonks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34BE204784EB7D4CD7FF1AA /* Pods_CarStonks.framework */; };
-		6F90D3844CB49B90F5F65D9D /* Pods_CarStonks_CarStonksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB67D64C51A2E73C4F69A79D /* Pods_CarStonks_CarStonksUITests.framework */; };
-		CB8FCFBD938634AD245C95A4 /* Pods_CarStonksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E66426B296907A9A38086D5D /* Pods_CarStonksTests.framework */; };
+		28C6A6882B81F9D300647D8B /* SwiftYFinance in Frameworks */ = {isa = PBXBuildFile; productRef = 28C6A6872B81F9D300647D8B /* SwiftYFinance */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062D06A7B155BA1F409C847F /* Pods-CarStonks-CarStonksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonks-CarStonksUITests.release.xcconfig"; path = "Target Support Files/Pods-CarStonks-CarStonksUITests/Pods-CarStonks-CarStonksUITests.release.xcconfig"; sourceTree = "<group>"; };
-		112538EB1B6357A5ED290866 /* Pods-CarStonks-CarStonksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonks-CarStonksUITests.debug.xcconfig"; path = "Target Support Files/Pods-CarStonks-CarStonksUITests/Pods-CarStonks-CarStonksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2836F41E25F130D600D9E705 /* CarStonks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarStonks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2836F42125F130D600D9E705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2836F42325F130D600D9E705 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,18 +57,11 @@
 		2836F44325F130D800D9E705 /* CarStonksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStonksUITests.swift; sourceTree = "<group>"; };
 		2836F44525F130D800D9E705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2836F48025F134A700D9E705 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		288A034B25F1B9CD0021D8EC /* StonksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonksList.swift; sourceTree = "<group>"; };
-		288A035325F275650021D8EC /* StonkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StonkData.swift; sourceTree = "<group>"; };
-		288A035F25F27B100021D8EC /* Stonk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stonk.swift; sourceTree = "<group>"; };
+		288A034B25F1B9CD0021D8EC /* StockListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListTab.swift; sourceTree = "<group>"; };
+		288A035325F275650021D8EC /* StockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDataManager.swift; sourceTree = "<group>"; };
+		288A035F25F27B100021D8EC /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		288A03A125F2A84D0021D8EC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		288A03A625F2AEF40021D8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
-		6BA7478197B1EE389DAF3A14 /* Pods-CarStonksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonksTests.debug.xcconfig"; path = "Target Support Files/Pods-CarStonksTests/Pods-CarStonksTests.debug.xcconfig"; sourceTree = "<group>"; };
-		909CDCA20718281D1F37235E /* Pods-CarStonks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonks.debug.xcconfig"; path = "Target Support Files/Pods-CarStonks/Pods-CarStonks.debug.xcconfig"; sourceTree = "<group>"; };
-		CF2CB64F172E7E53185BC0E7 /* Pods-CarStonksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonksTests.release.xcconfig"; path = "Target Support Files/Pods-CarStonksTests/Pods-CarStonksTests.release.xcconfig"; sourceTree = "<group>"; };
-		D814B426E55F45494EC8F264 /* Pods-CarStonks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarStonks.release.xcconfig"; path = "Target Support Files/Pods-CarStonks/Pods-CarStonks.release.xcconfig"; sourceTree = "<group>"; };
-		E34BE204784EB7D4CD7FF1AA /* Pods_CarStonks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarStonks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E66426B296907A9A38086D5D /* Pods_CarStonksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarStonksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB67D64C51A2E73C4F69A79D /* Pods_CarStonks_CarStonksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarStonks_CarStonksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61067D2488EF3FB2836BDF5A /* Pods_CarStonks.framework in Frameworks */,
+				28C6A6882B81F9D300647D8B /* SwiftYFinance in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8FCFBD938634AD245C95A4 /* Pods_CarStonksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F90D3844CB49B90F5F65D9D /* Pods_CarStonks_CarStonksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +97,6 @@
 				2836F43725F130D800D9E705 /* CarStonksTests */,
 				2836F44225F130D800D9E705 /* CarStonksUITests */,
 				2836F41F25F130D600D9E705 /* Products */,
-				C3A08915B481C76B80D50237 /* Pods */,
-				3A14B5280646CAA4F9D7AEF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +116,9 @@
 				2836F42125F130D600D9E705 /* AppDelegate.swift */,
 				2836F42325F130D600D9E705 /* SceneDelegate.swift */,
 				2836F42525F130D600D9E705 /* ViewController.swift */,
-				288A034B25F1B9CD0021D8EC /* StonksList.swift */,
-				288A035F25F27B100021D8EC /* Stonk.swift */,
-				288A035325F275650021D8EC /* StonkData.swift */,
+				288A034B25F1B9CD0021D8EC /* StockListTab.swift */,
+				288A035F25F27B100021D8EC /* Stock.swift */,
+				288A035325F275650021D8EC /* StockDataManager.swift */,
 				288A03A125F2A84D0021D8EC /* Config.swift */,
 				2836F42725F130D600D9E705 /* Main.storyboard */,
 				2836F42A25F130D800D9E705 /* Assets.xcassets */,
@@ -163,29 +148,6 @@
 			path = CarStonksUITests;
 			sourceTree = "<group>";
 		};
-		3A14B5280646CAA4F9D7AEF8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E34BE204784EB7D4CD7FF1AA /* Pods_CarStonks.framework */,
-				FB67D64C51A2E73C4F69A79D /* Pods_CarStonks_CarStonksUITests.framework */,
-				E66426B296907A9A38086D5D /* Pods_CarStonksTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C3A08915B481C76B80D50237 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				909CDCA20718281D1F37235E /* Pods-CarStonks.debug.xcconfig */,
-				D814B426E55F45494EC8F264 /* Pods-CarStonks.release.xcconfig */,
-				112538EB1B6357A5ED290866 /* Pods-CarStonks-CarStonksUITests.debug.xcconfig */,
-				062D06A7B155BA1F409C847F /* Pods-CarStonks-CarStonksUITests.release.xcconfig */,
-				6BA7478197B1EE389DAF3A14 /* Pods-CarStonksTests.debug.xcconfig */,
-				CF2CB64F172E7E53185BC0E7 /* Pods-CarStonksTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,17 +155,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2836F44825F130D800D9E705 /* Build configuration list for PBXNativeTarget "CarStonks" */;
 			buildPhases = (
-				983A5E6315E6884375F07159 /* [CP] Check Pods Manifest.lock */,
 				2836F41A25F130D600D9E705 /* Sources */,
 				2836F41B25F130D600D9E705 /* Frameworks */,
 				2836F41C25F130D600D9E705 /* Resources */,
-				AB3A4EC6B253BA6839ACBE96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CarStonks;
+			packageProductDependencies = (
+				28C6A6872B81F9D300647D8B /* SwiftYFinance */,
+			);
 			productName = CarStonks;
 			productReference = 2836F41E25F130D600D9E705 /* CarStonks.app */;
 			productType = "com.apple.product-type.application";
@@ -212,7 +175,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2836F44B25F130D800D9E705 /* Build configuration list for PBXNativeTarget "CarStonksTests" */;
 			buildPhases = (
-				B8BE6ECA650156E72A3110CF /* [CP] Check Pods Manifest.lock */,
 				2836F43025F130D800D9E705 /* Sources */,
 				2836F43125F130D800D9E705 /* Frameworks */,
 				2836F43225F130D800D9E705 /* Resources */,
@@ -231,11 +193,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2836F44E25F130D800D9E705 /* Build configuration list for PBXNativeTarget "CarStonksUITests" */;
 			buildPhases = (
-				041CF057F52185D406625E00 /* [CP] Check Pods Manifest.lock */,
 				2836F43B25F130D800D9E705 /* Sources */,
 				2836F43C25F130D800D9E705 /* Frameworks */,
 				2836F43D25F130D800D9E705 /* Resources */,
-				3CD1983F7C59A46EDC991DB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 2836F41525F130D600D9E705;
+			packageReferences = (
+				28C6A6862B81F9D300647D8B /* XCRemoteSwiftPackageReference "SwiftYFinance" */,
+			);
 			productRefGroup = 2836F41F25F130D600D9E705 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,119 +281,16 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		041CF057F52185D406625E00 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CarStonks-CarStonksUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3CD1983F7C59A46EDC991DB9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarStonks-CarStonksUITests/Pods-CarStonks-CarStonksUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarStonks-CarStonksUITests/Pods-CarStonks-CarStonksUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarStonks-CarStonksUITests/Pods-CarStonks-CarStonksUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		983A5E6315E6884375F07159 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CarStonks-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB3A4EC6B253BA6839ACBE96 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarStonks/Pods-CarStonks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CarStonks/Pods-CarStonks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarStonks/Pods-CarStonks-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8BE6ECA650156E72A3110CF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CarStonksTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2836F41A25F130D600D9E705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2836F42625F130D600D9E705 /* ViewController.swift in Sources */,
-				288A035425F275650021D8EC /* StonkData.swift in Sources */,
-				288A034C25F1B9CD0021D8EC /* StonksList.swift in Sources */,
+				288A035425F275650021D8EC /* StockDataManager.swift in Sources */,
+				288A034C25F1B9CD0021D8EC /* StockListTab.swift in Sources */,
 				288A03A225F2A84D0021D8EC /* Config.swift in Sources */,
-				288A036025F27B100021D8EC /* Stonk.swift in Sources */,
+				288A036025F27B100021D8EC /* Stock.swift in Sources */,
 				2836F42225F130D600D9E705 /* AppDelegate.swift in Sources */,
 				2836F42425F130D600D9E705 /* SceneDelegate.swift in Sources */,
 			);
@@ -605,7 +465,6 @@
 		};
 		2836F44925F130D800D9E705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 909CDCA20718281D1F37235E /* Pods-CarStonks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -628,7 +487,6 @@
 		};
 		2836F44A25F130D800D9E705 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D814B426E55F45494EC8F264 /* Pods-CarStonks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -651,7 +509,6 @@
 		};
 		2836F44C25F130D800D9E705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BA7478197B1EE389DAF3A14 /* Pods-CarStonksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -674,7 +531,6 @@
 		};
 		2836F44D25F130D800D9E705 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF2CB64F172E7E53185BC0E7 /* Pods-CarStonksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,7 +553,6 @@
 		};
 		2836F44F25F130D800D9E705 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 112538EB1B6357A5ED290866 /* Pods-CarStonks-CarStonksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -718,7 +573,6 @@
 		};
 		2836F45025F130D800D9E705 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 062D06A7B155BA1F409C847F /* Pods-CarStonks-CarStonksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -777,6 +631,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28C6A6862B81F9D300647D8B /* XCRemoteSwiftPackageReference "SwiftYFinance" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amitpdev/SwiftYFinance.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28C6A6872B81F9D300647D8B /* SwiftYFinance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28C6A6862B81F9D300647D8B /* XCRemoteSwiftPackageReference "SwiftYFinance" */;
+			productName = SwiftYFinance;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2836F41625F130D600D9E705 /* Project object */;
 }

@@ -60,17 +60,25 @@ extension SceneDelegate: CPTemplateApplicationSceneDelegate {
         // you can add and remove templates as the user
         // interacts with your app.
         self.interfaceController = interfaceController
+                
+        let stonksTab = StockListTab(list: Config.stonkList)
+        let cryptoTab = StockListTab(list: Config.cryptoList)
         
-        let stonksList = StonksList(symbols: Config.StonkSymbols,
-                                    tabTitle: "Stonks",
-                                    tabImage: "stonksBarIcon")
+        let stockDataManager = StockDataManager()
         
-        let cryptoList = StonksList(symbols: Config.CryptoSymbols,
-                                    tabTitle: "Crypto",
-                                    tabImage: "cryptoBarIcon")
+        stockDataManager.registerTimer(for: [Config.stonkList,
+                                            Config.cryptoList])
+        
+        stockDataManager.addObserver(stonksTab, forStockList: Config.stonkList.tabTitle)
+        
+        stockDataManager.addObserver(cryptoTab, forStockList: Config.cryptoList.tabTitle)
 
-        let rootTemplate = CPTabBarTemplate(templates: [stonksList.listTemplate, cryptoList.listTemplate])
+        let rootTemplate = CPTabBarTemplate(templates: [stonksTab.listTemplate, cryptoTab.listTemplate])
         interfaceController.setRootTemplate(rootTemplate, animated: true,
             completion: nil)
+        
+        stockDataManager.fetchDataNow([Config.stonkList,
+                                       Config.cryptoList])
+        
     }
 }
