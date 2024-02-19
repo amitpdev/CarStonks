@@ -22,6 +22,7 @@
 		288A03A225F2A84D0021D8EC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288A03A125F2A84D0021D8EC /* Config.swift */; };
 		288A03A725F2AEF40021D8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288A03A625F2AEF40021D8EC /* Assets.xcassets */; };
 		28C6A6882B81F9D300647D8B /* SwiftYFinance in Frameworks */ = {isa = PBXBuildFile; productRef = 28C6A6872B81F9D300647D8B /* SwiftYFinance */; };
+		28C6A68D2B837B2200647D8B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C6A68C2B837B2200647D8B /* ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		288A035F25F27B100021D8EC /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		288A03A125F2A84D0021D8EC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		288A03A625F2AEF40021D8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		28C6A68C2B837B2200647D8B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				288A034B25F1B9CD0021D8EC /* StockListTab.swift */,
 				288A035F25F27B100021D8EC /* Stock.swift */,
 				288A035325F275650021D8EC /* StockDataManager.swift */,
+				28C6A68C2B837B2200647D8B /* ImageDownloader.swift */,
 				288A03A125F2A84D0021D8EC /* Config.swift */,
 				2836F42725F130D600D9E705 /* Main.storyboard */,
 				2836F42A25F130D800D9E705 /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 			files = (
 				2836F42625F130D600D9E705 /* ViewController.swift in Sources */,
 				288A035425F275650021D8EC /* StockDataManager.swift in Sources */,
+				28C6A68D2B837B2200647D8B /* ImageDownloader.swift in Sources */,
 				288A034C25F1B9CD0021D8EC /* StockListTab.swift in Sources */,
 				288A03A225F2A84D0021D8EC /* Config.swift in Sources */,
 				288A036025F27B100021D8EC /* Stock.swift in Sources */,

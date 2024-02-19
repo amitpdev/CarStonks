@@ -23,15 +23,19 @@ extension StockListTab: StockDataObserver {
     
     func didFetchStocks(stocks: [Stock]) {
         debugPrint("Fetched \(stocks.count) Stocks")
-        let cpItems = StockListTab.cpItems(from: stocks)
-        listTemplate.updateSections([CPListSection(items: cpItems)])
+        Task {
+            let cpItems = await StockListTab.cpItems(from: stocks)
+            listTemplate.updateSections([CPListSection(items: cpItems)])
+        }
     }
 }
 
 
 extension StockListTab {
-    class func cpItems(from stocks: [Stock]) -> [CPListItem] {
+
+    class func cpItems(from stocks: [Stock]) async -> [CPListItem] {
         var items = [CPListItem]()
+
         for stock in stocks {
             var text = stock.symbol
                 .padding(toLength: 15, withPad: " ", startingAt: 0)
@@ -43,18 +47,18 @@ extension StockListTab {
                 .padding(toLength: 15, withPad: " ", startingAt: 0)
             
             var item: CPListItem? = nil
-            
-            if let url = stock.coinImageUrl {
-                if let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+
+            if let imageUrl = stock.coinImageUrl,
+               let image = await ImageDownloader.shared.downloadImage(from: imageUrl) {
                     let resizedImage = image.resized(to: CGSize(width: 20, height: 20))
-                        item = CPListItem(text: text, detailText: stock.shortName, image: resizedImage)
-                }
-            } else {
+                    item = CPListItem(text: text, detailText: stock.shortName, image: resizedImage)
+            }
+            else {
                 item = CPListItem(text: text, detailText: stock.shortName)
             }
             
-            // stop spinner on item tap
-            item?.handler = {item, completion in
+            // disable spinner on item tap
+            item?.handler = { item, completion in
                 completion()
             }
             
@@ -62,18 +66,7 @@ extension StockListTab {
                 items.append(item)
             }
         }
-        
+
         return items
-        
-    }
-}
-
-
-extension UIImage {
-    func resized(to newSize: CGSize) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
-        defer { UIGraphicsEndImageContext() }
-        self.draw(in: CGRect(origin: .zero, size: newSize))
-        return UIGraphicsGetImageFromCurrentImageContext() ?? self
     }
 }
